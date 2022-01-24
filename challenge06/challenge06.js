@@ -22,10 +22,11 @@ const sumNums = (arr) => {
 
 const reverseArray = (arr) => {
   let newArray = [];
-  for (i = arr.length - 1; i >= 0; i--) {
+  for (let i = arr.length - 1; i >= 0; i--) {
     newArray.push(arr[i]);
   }
-  return console.log(newArray);
+  console.log(newArray);
+  return newArray;
 };
 
 module.exports = { findMax, sumNums, reverseArray };
