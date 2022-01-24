@@ -1,5 +1,5 @@
 "use strict";
-
+// 1
 const findMax = (arr) => {
   let max = arr[0];
   for (let i = 0; i < arr.length; i++) {
@@ -10,6 +10,7 @@ const findMax = (arr) => {
   return max;
 };
 
+// 2
 const sumNums = (arr) => {
   let Sum = 0;
   for (let i = 0; i < arr.length; i++) {
@@ -20,6 +21,7 @@ const sumNums = (arr) => {
   return Sum;
 };
 
+// 3
 const reverseArray = (arr) => {
   let newArray = [];
   for (let i = arr.length - 1; i >= 0; i--) {
