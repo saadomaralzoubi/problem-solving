@@ -17,9 +17,9 @@
 
 const arrInc = (arr) => {
   let result = [];
-  let number = 0;
+  let x = 0;
   arr.forEach((element) => {
-    x = x + 10;
+    x = element + 10;
     result.push(x);
   });
   return result;
@@ -37,7 +37,7 @@ const roundDecimals = (arr) => {
   let array = [];
   let x = 0;
   arr.forEach((element) => {
-    number = Math.round(element);
+    x = Math.round(element);
     array.push(x);
   });
   return array;
@@ -108,18 +108,19 @@ const roundDecimals = (arr) => {
 
 // ------------------------
 const employeesBonus = (arr) => {
-    let newSalary =0;
-    arr.forEach(element => {
-        let salary = element.salary;
-        if (element.workHours > 8) {
-            newSalary = parseFloat(salary.replace(/\$|,/g, ''))+100;   
-        }
-        if (element.workHours <= 8) {
-            newSalary = parseFloat(salary.replace(/\$|,/g,''))+50;
-        } 
-        element.salary = newSalary +"$";
-        }
-    ); return arr;
+  let newSalary = 0;
+  arr.forEach((element) => {
+    let salary = element.salary;
+    if (element.workHours > 8) {
+      newSalary = parseFloat(salary.replace(/\$|,/g, "")) + 100;
+    }
+    if (element.workHours <= 8) {
+      newSalary = parseFloat(salary.replace(/\$|,/g, "")) + 50;
+    }
+    element.salary = newSalary + "$";
+  });
+  return arr;
+};
 // 4) ---------------------
 //
 // Harry wants to buy a new mouse and keyboard for his new setup
@@ -134,8 +135,6 @@ const employeesBonus = (arr) => {
 //
 // ==> 200
 // ------------------------
-const mostExpensive = (budget, mouseArray, keyBoardArray) => {
-  // write your code here
-};
+const mostExpensive = (budget, mouseArray, keyBoardArray) => {};
 
 module.exports = { arrInc, roundDecimals, employeesBonus, mostExpensive };
