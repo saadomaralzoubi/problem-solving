@@ -51,9 +51,6 @@ const customerAndAge = (obj) => {
 //
 // Output:
 // ["name: pizza", "ingredients: bread,tomato,chicken,mayo", "cookTime: twoHours", "price: 25$"]
-//
-// Note:
-// You can solve this challenge by using Object.entries
 
 // -------------------------------------------------------------------------------------------------------
 
