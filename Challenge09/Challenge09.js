@@ -37,7 +37,7 @@ const roundDecimals = (arr) => {
   let array = [];
   let x = 0;
   arr.forEach((element) => {
-    number = Math.round(element);
+    x = Math.round(element);
     array.push(x);
   });
   return array;
