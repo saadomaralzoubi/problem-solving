@@ -58,11 +58,11 @@ const customerAndAge = (obj) => {
 // -------------------------------------------------------------------------------------------------------
 
 const getEntries = (obj) => {
-  let myArray = [];
+  let Array = [];
   for (const [key, value] of Object.entries(obj)) {
-    myArray.push(`${key}: ${value}`);
+    Array.push(`${key}: ${value}`);
   }
-  return myArray;
+  return Array;
 };
 
 // -------------------------------------------------------------------------------------------------------
@@ -105,8 +105,8 @@ const getInfo = (arr) => {
   let studentsName = [];
   for (const courseArray of arr) {
     coursesName.push(courseArray.course);
-    for (const stuArray of courseArray.Students) {
-      studentsName.push(stuArray);
+    for (const studentArray of courseArray.Students) {
+      studentsName.push(studentArray);
     }
   }
 
@@ -132,21 +132,21 @@ const getInfo = (arr) => {
 //  ------------------------------------------------------------------------------------------------------
 
 const getStudents = (arr) => {
-  let resultObj = [];
+  let result = [];
 
-  for (const myArray of arr) {
-    for (const my2Array of courses) {
-      for (const my3Array of my2Array.Students) {
-        if (myArray == my3Array) {
-          console.log(my3Array);
+  for (const Array of arr) {
+    for (const Array2 of courses) {
+      for (const Array3 of Array2.Students) {
+        if (Array == Array3) {
+          console.log(Array3);
 
-          resultObj.push({ Student: my3Array, course: my2Array.course });
+          result.push({ Student: Array3, course: Array2.course });
         } else console.log("error");
       }
     }
   }
 
-  return resultObj;
+  return result;
 };
 
 module.exports = {
