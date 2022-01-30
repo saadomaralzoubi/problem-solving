@@ -108,18 +108,19 @@ const roundDecimals = (arr) => {
 
 // ------------------------
 const employeesBonus = (arr) => {
-    let newSalary =0;
-    arr.forEach(element => {
-        let salary = element.salary;
-        if (element.workHours > 8) {
-            newSalary = parseFloat(salary.replace(/\$|,/g, ''))+100;   
-        }
-        if (element.workHours <= 8) {
-            newSalary = parseFloat(salary.replace(/\$|,/g,''))+50;
-        } 
-        element.salary = newSalary +"$";
-        }
-    ); return arr;
+  let newSalary = 0;
+  arr.forEach((element) => {
+    let salary = element.salary;
+    if (element.workHours > 8) {
+      newSalary = parseFloat(salary.replace(/\$|,/g, "")) + 100;
+    }
+    if (element.workHours <= 8) {
+      newSalary = parseFloat(salary.replace(/\$|,/g, "")) + 50;
+    }
+    element.salary = newSalary + "$";
+  });
+  return arr;
+};
 // 4) ---------------------
 //
 // Harry wants to buy a new mouse and keyboard for his new setup
