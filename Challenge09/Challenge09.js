@@ -135,8 +135,6 @@ const employeesBonus = (arr) => {
 //
 // ==> 200
 // ------------------------
-const mostExpensive = (budget, mouseArray, keyBoardArray) => {
-  // write your code here
-};
+const mostExpensive = (budget, mouseArray, keyBoardArray) => {};
 
 module.exports = { arrInc, roundDecimals, employeesBonus, mostExpensive };
