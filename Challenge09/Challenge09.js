@@ -17,9 +17,9 @@
 
 const arrInc = (arr) => {
   let result = [];
-  let number = 0;
+  let x = 0;
   arr.forEach((element) => {
-    x = x + 10;
+    x = element + 10;
     result.push(x);
   });
   return result;
