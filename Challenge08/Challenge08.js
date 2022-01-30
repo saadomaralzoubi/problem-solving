@@ -139,8 +139,7 @@ const getStudents = (arr) => {
       for (const my3Array of my2Array.Students) {
         if (myArray == my3Array) {
           console.log(my3Array);
-          // resultObj.push(my3Array);
-          // resultObj.push(courses.course)
+
           resultObj.push({ Student: my3Array, course: my2Array.course });
         } else console.log("error");
       }
